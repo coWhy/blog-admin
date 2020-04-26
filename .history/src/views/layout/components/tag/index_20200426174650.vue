@@ -34,7 +34,7 @@ export default {
     handleCloseSelectedTag(tag) {
       let result = this.tagList.findIndex(item => item.name === tag.name)
       this.closeSelectedTag(tag)
-      this.$store.commit('getSelectedMenu', this.tagList[result - 1])
+      this.$store.tag.curMenu = this.tagList[result - 1]
       this.$router.push({ name: this.tagList[result - 1].name })
     },
     //点击切换 选中菜单 并且跳转页面

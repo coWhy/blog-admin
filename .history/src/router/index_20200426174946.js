@@ -30,7 +30,7 @@ const routes = [
       {
         path: '/type',
         name: 'type',
-        component: () => import('@/views/type')
+        component: () => import('@/views/user')
       }
     ]
   }
