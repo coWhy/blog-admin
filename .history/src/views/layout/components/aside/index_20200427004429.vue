@@ -118,7 +118,6 @@ export default {
   border: none;
   h1 {
     color: #ffffff;
-    font-weight: bolder;
     text-align: center;
     line-height: 60px;
   }
@@ -134,7 +133,6 @@ export default {
     border-radius: 50%;
     height: 62px;
     width: 62px;
-    margin-right: 10px;
   }
 }
 .logo {

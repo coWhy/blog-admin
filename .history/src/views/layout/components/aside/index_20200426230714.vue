@@ -14,12 +14,9 @@
     :active-text-color="asideSetting.activeColor"
     :collapse="isCollapse"
   >
-    <div v-show="isCollapse"><img src="@/assets/logo.png" class="logo" /></div>
-    <div v-show="!isCollapse" class="title">
-      <img src="@/assets/logo.png" class="logo" />
-      <h1 v-show="!isCollapse">个人博客后台</h1>
-    </div>
-
+    <!-- <h3 v-show="isCollapse">后台</h3>
+    <h3 v-show="!isCollapse">后台管理系统</h3> -->
+    <img src="../../../../assets/logo.png" class="img" />
     <!-- noChildrenList 开始 -->
     <el-menu-item
       :index="item.path"
@@ -116,30 +113,15 @@ export default {
   // 菜单占满容器
   height: 100%;
   border: none;
-  h1 {
+  h3 {
     color: #ffffff;
-    font-weight: bolder;
     text-align: center;
-    line-height: 60px;
+    line-height: 48px;
   }
 }
 // 折叠样式
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
-}
-.title {
-  display: flex;
-  .logo {
-    border-radius: 50%;
-    height: 62px;
-    width: 62px;
-    margin-right: 10px;
-  }
-}
-.logo {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
 }
 </style>

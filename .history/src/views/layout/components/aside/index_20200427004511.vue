@@ -134,7 +134,6 @@ export default {
     border-radius: 50%;
     height: 62px;
     width: 62px;
-    margin-right: 10px;
   }
 }
 .logo {

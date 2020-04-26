@@ -118,9 +118,8 @@ export default {
   border: none;
   h1 {
     color: #ffffff;
-    font-weight: bolder;
     text-align: center;
-    line-height: 60px;
+    line-height: 48px;
   }
 }
 // 折叠样式
@@ -134,12 +133,6 @@ export default {
     border-radius: 50%;
     height: 62px;
     width: 62px;
-    margin-right: 10px;
   }
-}
-.logo {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
 }
 </style>
