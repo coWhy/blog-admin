@@ -18,8 +18,6 @@ router.beforeEach(async (to, from, next) => {
       next({ path: '/' })
       NProgress.done()
     }
-    next()
-    NProgress.done()
   } else {
     /* 没有令牌*/
     if (whiteList.indexOf(to.path) !== -1) {

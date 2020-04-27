@@ -11,6 +11,7 @@ export const constantRoutes = [
   {
     path: '/login',
     name: 'login',
+    hidden: true,
     component: () => import('@/views/login/index')
   },
   {
@@ -37,12 +38,12 @@ export const constantRoutes = [
         name: 'type',
         component: () => import('@/views/type/index')
       }
-      // {
-      //   path: '*',
-      //   redirect: '/404',
-      //   hidden: true
-      // }
     ]
+  },
+  {
+    path: '/',
+    redirect: '/404',
+    hidden: true
   }
 ]
 
@@ -55,7 +56,6 @@ const createRouter = () =>
 
 const router = createRouter()
 
-// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router

@@ -3,6 +3,9 @@ import cookie from 'js-cookie'
 export function getAccessToken() {
   return cookie.get('accessToken')
 }
+export function getRefreshToken() {
+  return cookie.get('refreshToken')
+}
 // 获取用户名
 export function getUsername() {
   return cookie.get('username')
